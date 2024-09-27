@@ -15,7 +15,8 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "composite": true, // Esta opción debe ser true
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+    "types": ["@testing-library/jest-dom"]
   },
   "include": [
     "vite.config.ts",
