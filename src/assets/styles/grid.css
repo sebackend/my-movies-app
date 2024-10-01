@@ -1,0 +1,54 @@
+/* grid.css */
+
+/* Contenedor que actúa como una fila */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las columnas se ajusten en varias filas */
+  margin-left: -15px; /* Ajusta el espacio para el padding de las columnas */
+  margin-right: -15px;
+  max-width: 1200px; /* Establece un ancho máximo para el contenedor */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+/* grid.css */
+
+/* Otras clases permanecen igual */
+
+/* Estilo general para las columnas */
+.grid-item {
+  padding-left: 15px;
+  padding-right: 15px;
+  flex: 0 0 auto; /* Cambia a auto para evitar que se expandan */
+}
+
+/* Columna que ocupa 100% del ancho */
+.col-12 {
+  flex-basis: 100%;
+  max-width: 100%; /* Asegura que no exceda el 100% */
+}
+
+/* Columna que ocupa 50% del ancho */
+.col-6 {
+  flex-basis: 50%;
+  max-width: 50%; /* Asegura que no exceda el 50% */
+}
+
+/* Columna que ocupa 33.33% del ancho */
+.col-4 {
+  flex-basis: 33.33%;
+  max-width: 33.33%; /* Asegura que no exceda el 33.33% */
+}
+
+/* Columna que ocupa 25% del ancho */
+.col-3 {
+  flex-basis: 25%;
+  max-width: 25%; /* Asegura que no exceda el 25% */
+}
+
+/* Media query para mantener el diseño responsivo */
+@media (max-width: 768px) {
+  .col-6, .col-4, .col-3 {
+    flex-basis: 100%; /* En pantallas pequeñas, cada columna ocupa el 100% */
+    max-width: 100%; /* Asegura que no exceda el 100% */
+  }
+}
